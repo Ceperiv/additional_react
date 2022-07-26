@@ -1,0 +1,17 @@
+
+
+.form form{
+    width: 100%;
+    display: flex;
+}
+
+.form input{
+   border-radius: 5px;
+    border: olive 1px solid;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.error{
+    font-size: x-small;
+    color: brown;
+}

@@ -4,7 +4,7 @@ function Car({item, deleteCar, setCarForUpdate}) {
     const {id, model, price, year} = item
 
     return (
-        <div>
+        <div className={'car-info'}>
             <ul>
                 <li> id: {id}</li>
                 <li>model: {model}</li>

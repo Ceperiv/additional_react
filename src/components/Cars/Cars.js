@@ -16,6 +16,8 @@ function Cars(props) {
 
     let addCar = (car) => {
         setCars([...cars, car])
+        // console.log(car)
+        // console.log(cars)
     }
 
     const deleteCar = async (id) => {
@@ -31,19 +33,29 @@ function Cars(props) {
 
     const updateCar = (car) => {
         const res = [...cars]
-        const find = res.find(value => value.id === carForUpdate.id)
+        const find = res.find(value => value.id === car.id)
+        console.log(find)
+        console.log(car)
+        console.log(res)
         Object.assign(find, car);
         setCars(res)
         setCarForUpdate(null)
     }
 
     return (
-        <div>
-            <CarForm addCar={addCar} carForUpdate={carForUpdate} updateCar={updateCar}/>
-            <hr/>
-            {cars.map(value => <Car key={value.id} item={value} deleteCar={deleteCar}
-                                    setCarForUpdate={setCarForUpdate}/>)}
-        </div>
+        <main>
+            <CarForm
+                addCar={addCar}
+                carForUpdate={carForUpdate}
+                updateCar={updateCar}/>
+
+            {cars.map(value =>
+                <Car
+                    key={value.id}
+                    item={value}
+                    deleteCar={deleteCar}
+                    setCarForUpdate={setCarForUpdate}/>)}
+        </main>
     );
 }
 

@@ -1,7 +1,26 @@
+main{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 button{
     width: 80px;
     height: 30px;
     color: grey;
     border: #a2a0a0 1px solid;
     border-radius: 5px;
+    margin-left: 10px;
+}
+
+.car-info{
+    width: 400px;
+
+}
+
+.car-info ul{
+    list-style-type: none;
 }
