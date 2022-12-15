@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {carActions} from "../../redux/slice/car.slice";
 import {Car} from "../Car/Car";
 import {useSearchParams} from "react-router-dom";
+import {CarForm} from "../CarForm/CarForm";
 
 
 function Cars(props) {
@@ -31,6 +32,7 @@ function Cars(props) {
         <div className={'cars-wrap'}>
             <button disabled={!prev} onClick={prevPage}>prev</button>
             <button disabled={!next} onClick={nextPage}>next</button>
+            <CarForm/>
             <h1>hello world</h1>
             {isLoading && !errors && <h2>Loading.....</h2>}
             {errors && <h2>:( server Error</h2>}

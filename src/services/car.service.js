@@ -10,7 +10,7 @@ const carService = {
         }
     }*/),
     updateById: (id, data)=> axiosService.put(`${urls.cars}/${id}`, data    ),
-    // create:(car)=> axiosService.post(urls.cars, car),
+    create:(car)=> axiosService.post(urls.cars, car),
     // update:(id, car)=> axiosService.put(`${urls.cars}/${id}`, car),
     deleteById: (id) => axiosService.delete(urls.cars + '/' + id)
 }
