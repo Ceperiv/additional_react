@@ -1,8 +1,10 @@
-import {Route, Routes, Navigate} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
+import React from 'react';
 
 import './App.css';
 import {MainLayout} from "./layouts";
-import {CarsPage, LoginPage, RegisterPage} from "./pages";
+import {CarsPage, CustomErrors, LoginPage, RegisterPage} from "./pages";
+import {NotFoundPage} from "./pages/NotFoundPage";
 
 function App() {
     return (
@@ -13,9 +15,13 @@ function App() {
                 <Route index element={<Navigate to={'login'}/>}/>
                 <Route path={'login'} element={<LoginPage/>}/>
                 <Route path={'register'} element={<RegisterPage/>}/>
-                <Route path={'cars'} element={<CarsPage/>}/>
+                <Route path={'error'} element={<CustomErrors/>}/>
             </Route>
+            <Route path={'cars'} element={<CarsPage/>}/>
+            <Route path={'*'} element={<NotFoundPage/>}/>
+
         </Routes>
+
 
     );
 }

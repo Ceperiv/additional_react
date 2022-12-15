@@ -1,4 +1,22 @@
-.header{
+.header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-padding: 5px;
+    padding: 5px;
+}
+
+.header button {
+    width: 80px;
+    height: 30px;
+    box-shadow: 0 0 5px;
+    border: cadetblue 1px solid;
+    border-radius: 5px ;
+    background: burlywood;
+    margin-right:15px    ;
+}
+.header button:active{
+    background: #b79156;
+    box-shadow: 0 0 10px;
 }

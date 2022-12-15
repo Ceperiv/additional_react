@@ -1,9 +1,10 @@
 import React from 'react';
+import {Cars} from "../components";
 
 function CarsPage(props) {
     return (
-        <div>
-            CarsPage
+        <div className={'carsPage'}>
+            <Cars/>
         </div>
     );
 }

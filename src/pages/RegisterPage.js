@@ -1,9 +1,12 @@
 import React from 'react';
 
+import {RegisterForm} from "../components";
+import './Pages.style.css'
+
 function RegisterPage(props) {
     return (
-        <div>
-            RegisterPage
+        <div className={'forms'}>
+           <RegisterForm/>
         </div>
     );
 }

@@ -1,0 +1,70 @@
+.forms {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.forms input {
+    margin-right: 15px;
+    width: 180px;
+    height: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    background: lightgrey;
+    border: #8bc3c5 1px solid;
+
+}
+
+.register input:focus {
+    background: #fdfdfd;
+}
+
+.forms button {
+    width: 80px;
+    height: 25px;
+    border: #8bc3c5 1px solid;
+    border-radius: 5px;
+}
+
+.forms button:active {
+    background: #b7b4b4;
+
+}
+
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 0;
+}
+
+.not-found-page .icon-loading {
+    border-radius: 50%;
+    border-left: #1c5b5d 1px solid;
+    border-right: #1c5b5d 1px solid;
+}
+
+
+.not-found-page h1 {
+    color: wheat;
+    margin: 20px 0;
+}
+
+.not-found-page button {
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 0 5px;
+    border: cadetblue 1px solid;
+    border-radius: 5px;
+    background: burlywood;
+    margin: 20px 0;
+
+}
+
+.not-found-page button:active {
+    background: #b79156;
+    box-shadow: 0 0 10px;
+}
